@@ -75,7 +75,6 @@ body {
 .container-header {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .page-header {
@@ -126,6 +125,7 @@ body {
   color: var(--secondory-font-color-slate);
   letter-spacing: 0.02em;
   margin-left: auto;
+  padding: 24px 0;
 }
 
 .contacts:hover {
@@ -138,9 +138,17 @@ body {
 /* Section one */
 
 .section-one {
-  background-color: var(--secondory-light-color);
+  max-width: 1440px;
   padding: 188px 0;
   margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/image17.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section-one-title {
@@ -328,6 +336,30 @@ body {
   color: var(--secondory-font-color-slate);
 }
 
+/* Section five */
+
+.section-five {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.section-five-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondory-light-color);
+  margin-bottom: 72px;
+}
+
+.section-five-list {
+  gap: 24px;
+  display: flex;
+}
 /* FOOTER */
 
 .footer-text {
@@ -405,6 +437,8 @@ body {
   color: var(--main-light-color);
   background-color: var(--ocean-blue);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-section-one-list-images {
